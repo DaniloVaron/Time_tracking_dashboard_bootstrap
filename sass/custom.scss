@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+@import "./variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  background-color: $Azul_muy_oscuro;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 12rem repeat(3, minmax(200px, 13rem));
+  gap: 1rem;
+}
+
+/* Autor */
+.card-autor {
+  grid-row: span 2;
+  border-radius: 0.8rem;
+  background-color: $Azul_oscuro;
+}
+
+/* Información general del autor */
+.card-autor-info {
+  background-color: $Azul;
+  border-radius: 0.8rem;
+}
+
+/* Imagen del autor */
+.card-autor-info img {
+  width: 3.5rem;
+  border: 0.13rem solid white;
+  border-radius: 50%;
+}
+
+/* Parrafo del autor */
+.card-autor-info p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: $Azul_palido;
+}
+
+/* Titulo del autor */
+.card-autor-info h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+/* Botones del tiempo */
+.card-button {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  /* background-color: transparent;*/
+  color: $Azul_desaturado;
+}
+
+.card-button:hover {
+  color: white;
+}
+
+.card-active {
+  color: white;
+}
+
+.card {
+  border-radius: 0.8rem;
+  background-repeat: no-repeat;
+  background-position: 92% -0.3rem;
+  background-size: 3.5rem;
+}
+
+/* Cuerpo de la Tarjeta */
+.card-body {
+  margin-top: 2rem;
+  border-radius: 0.8rem;
+  background-color: $Azul_oscuro;
+  top: 2px;
+  width: 101%;
+  align-self: center;
+}
+
+.card-body:hover {
+  cursor: pointer;
+  background-color: $Azul_desaturado_hover;
+}
+
+/* Tarjeta de Trabajo */
+.work {
+  background-color: $Naranja;
+  background-image: url(../images/icon-work.svg);
+}
+
+/* Tarjeta de Juego */
+.play {
+  background-color: $Azul_suave;
+  background-image: url(../images/icon-play.svg);
+}
+
+/* Tarjeta de Estudio */
+.study {
+  background-color: $Rojo_claro;
+  background-image: url(../images/icon-study.svg);
+}
+
+/* Tarjeta de Ejercicio */
+.exercise {
+  background-color: $Verde_lima;
+  background-image: url(../images/icon-exercise.svg);
+}
+
+/* Tarjeta de social */
+.social {
+  background-color: $Violeta;
+  background-image: url(../images/icon-social.svg);
+}
+
+/* Tarjeta de Salud */
+.selfcare {
+  background-color: $Naranja_suave;
+  background-image: url(../images/icon-self-care.svg);
+}
+
+/* Titulos de las tarjetas */
+
+/* Puntos */
+.card-title img {
+  width: 1.1rem;
+}
+
+/* Titulo de cada tarjeta */
+.card-title h3 {
+  font-weight: 500;
+}
+
+/* Hora de cada tarjeta */
+.card-info h3 {
+  font-weight: 300;
+}
+
+/* Horario anterior de cada tarjeta */
+.card-info p {
+  font-size: 0.7rem;
+  color: $Azul_palido;
+}
+
+/* Otro */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import "./media";
